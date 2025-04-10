@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background: url('https://wallpaperaccess.com/full/407993.jpg') center/cover no-repeat;
+    color: white;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.7s ;
+  }
+  header:hover{
+    scale: 100%;
+
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(3, 3, 3, 0.897);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .btn {
+    background: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #ff4b4b;
+  }
+  
+  .hero {
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-btn {
+    font-size: 1rem;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    background: #fff;
+  }
+  
+  .feature {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .feature img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+  
